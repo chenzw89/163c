@@ -15,20 +15,20 @@ int main(int argc, char *argv[])
 		}
 		else if (s[i-1] == ' ') {
 			t = &s[i];
-			if (first) {
+			if (first) 
 				first = 0;
-			} else {
+			else 
 				printf(" ");
-			}
+			
 			printf("%s", t);
 		} 
 	}
 	if (s[0] != '\0') {
-		if (first) {
+		if (first) 
 			printf("%s", s);
-		} else {
+		else 
 			printf(" %s", s);
-		}
+		
 	}
 	printf("\n"); 
 		
