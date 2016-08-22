@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	scanf("%100s", s1);
 	scanf("%3s", s2);
 
-	while ((p = strstr(s1, s2))) {
+	while (p = strstr(s1, s2)) {
 	    cnt++;
 		s1 = p + 2;		
 	}
