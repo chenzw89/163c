@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	scanf("%3s", s2);
 
 	while (p = strstr(s1, s2)) {
-	    cnt++;
+		cnt++;
 		s1 = p + 2;		
 	}
 	
