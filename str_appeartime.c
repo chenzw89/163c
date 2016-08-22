@@ -11,22 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-	char *s1, s2[3] = "", *p;
-	int cnt = 0;
+    char *s1, s2[3] = "", *p;
+    int cnt = 0;
 
-	s1 =  (char *)malloc(100);
-	
-	scanf("%100s", s1);
-	scanf("%3s", s2);
+    s1 =  (char *)malloc(100);
+    
+    scanf("%100s", s1);
+    scanf("%3s", s2);
 
-	while (p = strstr(s1, s2)) {
-		cnt++;
-		s1 = p + 2;		
-	}
-	
-	printf("%d\n", cnt);
+    while (p = strstr(s1, s2)) {
+        cnt++;
+        s1 = p + 2;     
+    }
+    
+    printf("%d\n", cnt);
 
-	/*free(s1);*/
+    /*free(s1);*/
 
-	return 0;
+    return 0;
 }
